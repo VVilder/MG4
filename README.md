@@ -1,6 +1,6 @@
 # MG4
 ## Devlog
-FloatAnimation makes the food bob up and down. In Start(), _timer gets set to _switchSpeed, so it starts counting from there. Then Update() runs every frame. If _up is true it moves the food up, and if it's false it moves it down. Every frame _timer also goes down by Time.deltaTime, and once it hits 0 it resets back to _switchSpeed and flips _up to the opposite. So the food goes up for a bit, then down for a bit, and keeps switching.
+FloatAnimation is what makes the food bob. Start() sets _timer to _switchSpeed so it has something to count down from and Update() runs every frame and moves the food up if _up is true or down if it’s false. It also subtracts Time.deltaTime from _timer, and when it hits 0 it resets and flips _up, so the food just keeps switching between going up and down.
 
 ## Open-Source Assets
 - [Quirky animal 3D models](https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-free-animals-pack-178235)
